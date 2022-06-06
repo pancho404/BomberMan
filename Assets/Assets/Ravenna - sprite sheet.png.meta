@@ -1,0 +1,528 @@
+fileFormatVersion: 2
+guid: c6a9c442e2832634180ceaf9e424228e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 766863450024511923
+    second: Ravenna - sprite sheet_0
+  - first:
+      213: -2930244235606315313
+    second: Ravenna - sprite sheet_1
+  - first:
+      213: 311601446866843262
+    second: Ravenna - sprite sheet_2
+  - first:
+      213: -3254668354435091730
+    second: Ravenna - sprite sheet_3
+  - first:
+      213: 8910059871912516006
+    second: Ravenna - sprite sheet_4
+  - first:
+      213: -6524633499071597592
+    second: Ravenna - sprite sheet_5
+  - first:
+      213: 7769102624966870353
+    second: Ravenna - sprite sheet_6
+  - first:
+      213: 4451425009791752587
+    second: Ravenna - sprite sheet_7
+  - first:
+      213: 3819455835382869096
+    second: Ravenna - sprite sheet_8
+  - first:
+      213: -3357531256386917582
+    second: Ravenna - sprite sheet_9
+  - first:
+      213: -8735589745271667790
+    second: Ravenna - sprite sheet_10
+  - first:
+      213: -1160947923362094832
+    second: Ravenna - sprite sheet_11
+  - first:
+      213: 3866304663948612704
+    second: Ravenna - sprite sheet_12
+  - first:
+      213: -8521599800314053666
+    second: Ravenna - sprite sheet_13
+  - first:
+      213: 2479749879879440384
+    second: Ravenna - sprite sheet_14
+  - first:
+      213: 8957127636607812893
+    second: Ravenna - sprite sheet_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3900
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b901f9ae3274aa00800000000000000
+      internalID: 766863450024511923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 3900
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fceac8f846ea557d0800000000000000
+      internalID: -2930244235606315313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 3900
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76feff6dd7035400800000000000000
+      internalID: 311601446866843262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 3900
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2f038206815d2d0800000000000000
+      internalID: -3254668354435091730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2600
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9dec8fe34e6ab70800000000000000
+      internalID: 8910059871912516006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2600
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3393ec668d375a0800000000000000
+      internalID: -6524633499071597592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 2600
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15584b8cca561db60800000000000000
+      internalID: 7769102624966870353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 2600
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b895de43673a6cd30800000000000000
+      internalID: 4451425009791752587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1300
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ce94f88de610530800000000000000
+      internalID: 3819455835382869096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1300
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b69cc7c17a761d0800000000000000
+      internalID: -3357531256386917582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 1300
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b38989e863f4c680800000000000000
+      internalID: -8735589745271667790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 1300
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0116641c30c73efe0800000000000000
+      internalID: -1160947923362094832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064d7187b9fd7a530800000000000000
+      internalID: 3866304663948612704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edbbd3881223db980800000000000000
+      internalID: -8521599800314053666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0081802a067d96220800000000000000
+      internalID: 2479749879879440384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ravenna - sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3900
+        y: 0
+        width: 1300
+        height: 1300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15c7dbe02c1e4c70800000000000000
+      internalID: 8957127636607812893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
