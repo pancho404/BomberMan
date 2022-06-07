@@ -9,6 +9,7 @@ public class MapDestroyer : MonoBehaviour
 
     [SerializeField] Tile wallTile;
     [SerializeField] Tile destroyableTile;
+    [SerializeField] Tile floorTile;
 
     public void Explode(Vector2 worldPos)
     {
@@ -28,7 +29,7 @@ public class MapDestroyer : MonoBehaviour
 
         if (tile==destroyableTile)
         {
-            tilemap.SetTile(cell, null);
+            tilemap.SetTile(cell, floorTile);
         }
 
         //Crear explosion
