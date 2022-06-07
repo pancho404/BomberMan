@@ -31,8 +31,7 @@ public class MapDestroyer : MonoBehaviour
         if (tile == destroyableTile)
         {
             tilemap.SetTile(cell, floorTile);
-            Destroy(destroyableCollider);
-            
+            Destroy(destroyableCollider);            
         }
 
         //Crear explosion
