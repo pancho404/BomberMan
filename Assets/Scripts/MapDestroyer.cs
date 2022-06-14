@@ -6,7 +6,7 @@ using UnityEngine.Tilemaps;
 public class MapDestroyer : MonoBehaviour
 {
     [SerializeField] Tilemap tilemap;
-    [SerializeField] Tilemap gameplayTiemap;
+    [SerializeField] Tilemap gameplayTilemap;
     [SerializeField] Tile wallTile;
     [SerializeField] Tile destroyableTile;
     [SerializeField] Tile floorTile;
@@ -33,7 +33,7 @@ public class MapDestroyer : MonoBehaviour
     void ExplodeCell(Vector3Int cell)
     {
         Tile tile = tilemap.GetTile<Tile>(cell); 
-        Tile gameplayTile = gameplayTiemap.GetTile<Tile>(cell); 
+        Tile gameplayTile = gameplayTilemap.GetTile<Tile>(cell); 
         if (tile == wallTile)
         {
             return;
@@ -41,7 +41,7 @@ public class MapDestroyer : MonoBehaviour
 
         if (gameplayTile == destroyableTile)
         {
-            gameplayTiemap.SetTile(cell, null);            
+            gameplayTilemap.SetTile(cell, null);            
         }
         
         //Crear explosion 
