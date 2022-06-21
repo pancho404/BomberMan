@@ -33,4 +33,13 @@ public class LoadScene : MonoBehaviour
         SceneManager.LoadScene("MainMenu");        
     }
     
+    public void LoadOneWins()
+    {
+        SceneManager.LoadScene("OneWins");
+    }
+
+    public void LoadTwoWins()
+    {
+        SceneManager.LoadScene("TwoWins");
+    }
 }
