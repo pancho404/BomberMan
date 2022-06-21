@@ -5,19 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] float speed = 1f;
+    [SerializeField] float speed = 5f;
     [SerializeField] Transform movePoint;
 
     [SerializeField] LayerMask whatStops;
 
 
     // Start is called before the first frame update
+
     void Start()
     {
         movePoint.parent = null;
     }
 
     // Update is called once per frame
+
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
