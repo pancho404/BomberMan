@@ -6,12 +6,13 @@ public class AnimationsManager : MonoBehaviour
 {
     [SerializeField] Animator playerOneAnimator;
     [SerializeField] Animator playerTwoAnimator;
-
+    [SerializeField] GameObject playerOne;
+    [SerializeField] GameObject playerTwo;
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetAxisRaw("Horizontal")==1f)
+
+        if (Input.GetAxisRaw("Horizontal") == 1f)
         {
             playerOneAnimator.SetTrigger("Right");
         }
@@ -52,5 +53,6 @@ public class AnimationsManager : MonoBehaviour
         {
             playerTwoAnimator.SetTrigger("Down");
         }
+
     }
 }
