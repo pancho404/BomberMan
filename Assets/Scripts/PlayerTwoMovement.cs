@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerTwoMovement : MonoBehaviour
 {
     [SerializeField] float speed = 1f;
     [SerializeField] Transform movePoint;
 
     [SerializeField] LayerMask whatStops;
 
+    [SerializeField] Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -24,18 +25,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
         {
-            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+            if (Mathf.Abs(Input.GetAxisRaw("ArrowsH")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .05f, whatStops))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("ArrowsH"), 0f, 0f), .05f, whatStops))
                 {
-                    movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                    movePoint.position += new Vector3(Input.GetAxisRaw("ArrowsH"), 0f, 0f);
                 }
             }
-            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            else if (Mathf.Abs(Input.GetAxisRaw("ArrowsV")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .05f, whatStops))
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("ArrowsV"), 0f), .05f, whatStops))
                 {
-                    movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                    movePoint.position += new Vector3(0f, Input.GetAxisRaw("ArrowsV"), 0f);
                 }
             }
 
@@ -45,6 +46,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         Destroy(gameObject);
-        SceneManager.LoadScene("TwoWins");
+        SceneManager.LoadScene("OneWins");
     }
 }

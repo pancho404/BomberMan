@@ -10,6 +10,8 @@ public class MapDestroyer : MonoBehaviour
     [SerializeField] Tile wallTile;
     [SerializeField] Tile destroyableTile;
     [SerializeField] Tile floorTile;
+    [SerializeField] GameObject explosionPrefab;
+
     Vector3Int right = new Vector3Int(1, 0, 0); 
     Vector3Int up = new Vector3Int(0, 1, 0); 
     Vector3Int left = new Vector3Int(-1, 0, 0); 
@@ -43,9 +45,10 @@ public class MapDestroyer : MonoBehaviour
         {
             gameplayTilemap.SetTile(cell, null);            
         }
-        
-        //Crear explosion 
 
+
+        //Vector3 pos= tilemap.GetCellCenterWorld(cell);
+        //Instantiate(explosionPrefab, pos, Quaternion.identity);
 
     }
 }

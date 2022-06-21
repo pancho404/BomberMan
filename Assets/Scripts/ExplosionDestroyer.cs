@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombExplosion : MonoBehaviour
+public class ExplosionDestroyer : MonoBehaviour
 {
     [SerializeField] float countdown = 2f;
-    [SerializeField] GameObject explosion;
     // Update is called once per frame
     void Update()
     {
@@ -13,10 +12,7 @@ public class BombExplosion : MonoBehaviour
 
         if (countdown <= 0)
         {
-            FindObjectOfType<MapDestroyer>().Explode(transform.position);
             Destroy(gameObject);
-            Instantiate(explosion, transform.position, Quaternion.identity);
-            
         }
     }
 }
