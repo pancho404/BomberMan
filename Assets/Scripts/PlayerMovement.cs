@@ -24,13 +24,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         Vector3 horizontal = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-        Vector3 arrowsH = new Vector3(Input.GetAxisRaw("ArrowsH"), 0f, 0f);
         Vector3 vertical = new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
-        Vector3 arrowsV = new Vector3(0f, Input.GetAxisRaw("ArrowsV"), 0f);
         animator.SetFloat("Horizontal", horizontal.x);
-        animator.SetFloat("ArrowsH", arrowsH.x);
+        animator.SetFloat("magH", horizontal.magnitude);
         animator.SetFloat("Vertical", vertical.y);
-        animator.SetFloat("ArrowsV", arrowsV.y);
+        animator.SetFloat("magV", vertical.magnitude);
 
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
 
