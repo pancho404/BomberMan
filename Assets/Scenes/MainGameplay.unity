@@ -625,7 +625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_Size.y
-      value: 7.309636
+      value: 6.4906006
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_Enabled
@@ -637,7 +637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_Offset.y
-      value: 0.00000035762787
+      value: -0.4095174
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_IsTrigger
@@ -18707,7 +18707,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Player One: Space to drop bombs
 
-    Player Two: Right Shift to drop bombs'
+    W A S D to move
+
+
+    Player Two:
+    Right Shift to drop bombs
+
+    Up Left Down Right to move'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20446,7 +20452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_Size.y
-      value: 10
+      value: 10.131044
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_Enabled
@@ -20458,7 +20464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: -0.72074056
       objectReference: {fileID: 0}
     - target: {fileID: 1681393100319704031, guid: f73fca0d56110624d9a5e015594156c7, type: 3}
       propertyPath: m_IsTrigger
