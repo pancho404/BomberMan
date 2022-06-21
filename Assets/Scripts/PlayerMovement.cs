@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
+
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
@@ -32,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
                 {
-                    
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .05f, whatStops))
                     {
                         movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
@@ -71,11 +69,11 @@ public class PlayerMovement : MonoBehaviour
         Destroy(gameObject);
         if (gameObject.tag == "PlayerOne")
         {
-            SceneManager.LoadScene("TwoWins");
+            FindObjectOfType<LoadScene>().LoadTwoWins();
         }
         if (gameObject.tag == "PlayerTwo")
         {
-            SceneManager.LoadScene("OneWins");
+            FindObjectOfType<LoadScene>().LoadOneWins();
         }
     }
 }
