@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask whatStops;
 
 
+
     // Start is called before the first frame update
 
     void Start()
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
                 {
+                    
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .05f, whatStops))
                     {
                         movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
