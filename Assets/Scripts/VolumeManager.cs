@@ -11,9 +11,12 @@ public class VolumeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerPrefs.SetFloat("volume", slider.value);
         slider.value = PlayerPrefs.GetFloat("volume");
         audioSource.volume = slider.value;
-       
+    }
+
+    public void ChangeVolume(float volume)
+    {
+        PlayerPrefs.SetFloat("volume", volume);
     }
 }

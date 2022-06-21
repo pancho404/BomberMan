@@ -7,6 +7,7 @@ TagManager:
   - Destroyable
   - PlayerOne
   - PlayerTwo
+  - Fire
   layers:
   - Default
   - TransparentFX

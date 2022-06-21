@@ -9,19 +9,28 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] LayerMask whatStops;
 
-
+    Animator animator;
 
     // Start is called before the first frame update
 
     void Start()
     {
         movePoint.parent = null;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
 
     void Update()
     {
+        Vector3 horizontal = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+        Vector3 arrowsH = new Vector3(Input.GetAxisRaw("ArrowsH"), 0f, 0f);
+        Vector3 vertical = new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+        Vector3 arrowsV = new Vector3(0f, Input.GetAxisRaw("ArrowsV"), 0f);
+        animator.SetFloat("Horizontal", horizontal.x);
+        animator.SetFloat("ArrowsH", arrowsH.x);
+        animator.SetFloat("Vertical", vertical.y);
+        animator.SetFloat("ArrowsV", arrowsV.y);
 
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, speed * Time.deltaTime);
 
@@ -33,14 +42,14 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .05f, whatStops))
                     {
-                        movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                        movePoint.position += horizontal;
                     }
                 }
                 else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .05f, whatStops))
                     {
-                        movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                        movePoint.position += vertical;
                     }
                 }
             }
@@ -50,14 +59,14 @@ public class PlayerMovement : MonoBehaviour
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("ArrowsH"), 0f, 0f), .05f, whatStops))
                     {
-                        movePoint.position += new Vector3(Input.GetAxisRaw("ArrowsH"), 0f, 0f);
+                        movePoint.position += horizontal;
                     }
                 }
                 else if (Mathf.Abs(Input.GetAxisRaw("ArrowsV")) == 1f)
                 {
                     if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("ArrowsV"), 0f), .05f, whatStops))
                     {
-                        movePoint.position += new Vector3(0f, Input.GetAxisRaw("ArrowsV"), 0f);
+                        movePoint.position += vertical;
                     }
                 }
             }
