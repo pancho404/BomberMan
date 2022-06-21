@@ -30,6 +30,10 @@ public class MapDestroyer : MonoBehaviour
         ExplodeCell(originCell +left);
         ExplodeCell(originCell + up);
         ExplodeCell(originCell + down);
+        ExplodeCell(originCell + right + right);
+        ExplodeCell(originCell + left + left);
+        ExplodeCell(originCell + up + up);
+        ExplodeCell(originCell + down + down);
     }
 
     void ExplodeCell(Vector3Int cell)
