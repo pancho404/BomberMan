@@ -6,11 +6,20 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
 
+    public void LoadGameModeSelection()
+    {
+        SceneManager.LoadScene("GameModeSelection");
+    }
+
     public void LoadGameplay()
     {
         SceneManager.LoadScene("MainGameplay");
     }
 
+    public void LoadAiGameplay()
+    {
+        SceneManager.LoadScene("MainGameplayAI");
+    }
     public void LoadOptions()
     {
         SceneManager.LoadScene("Options");
