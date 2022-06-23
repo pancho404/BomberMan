@@ -20,7 +20,7 @@ public class AnimationsManager : MonoBehaviour
             }
             if (Input.GetAxisRaw("Horizontal") == -1f)
             {
-                playerOneAnimator.SetTrigger("Left");
+                playerOneAnimator.SetTrigger("Left");               
             }
             if (Input.GetAxisRaw("Horizontal") == 0f && Input.GetAxisRaw("Vertical") == 0f)
             {

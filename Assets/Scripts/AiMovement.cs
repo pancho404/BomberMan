@@ -17,7 +17,9 @@ public class AiMovement : MonoBehaviour
 
         if (gameObject && player)
         {
-            //playerTwoAnimator.SetTrigger("Idle");
+            playerTwoAnimator.SetBool("Moving", false);
+            playerTwoAnimator.SetFloat("arrMagV", 0);
+            playerTwoAnimator.SetFloat("arrMagH", 0);
             if (countdown <= 0)
             {
                 if (!Physics2D.OverlapCircle(gameObject.transform.position + new Vector3(0f, 1f, 0f), .05f, whatStops) && !Physics2D.OverlapCircle(gameObject.transform.position + new Vector3(0f, -1f, 0f), .05f, whatStops))
@@ -25,12 +27,16 @@ public class AiMovement : MonoBehaviour
                     if (gameObject.transform.position.y < player.transform.position.y)
                     {
                         gameObject.transform.position += new Vector3(0f, 1f, 0f);
-                        playerTwoAnimator.SetTrigger("Up");
+                        playerTwoAnimator.SetBool("Moving", true);
+                        playerTwoAnimator.SetFloat("arrowsV", 1);
+                        playerTwoAnimator.SetFloat("arrMagV", 1);
                     }
                     if (gameObject.transform.position.y > player.transform.position.y)
                     {
                         gameObject.transform.position += new Vector3(0f, -1f, 0f);
-                        playerTwoAnimator.SetTrigger("Down");
+                        playerTwoAnimator.SetBool("Moving", true);
+                        playerTwoAnimator.SetFloat("arrowsV", -1);
+                        playerTwoAnimator.SetFloat("arrMagV", 1);
                     }
                 }
                 if (!Physics2D.OverlapCircle(gameObject.transform.position + new Vector3(1f, 0f, 0f), .05f, whatStops) && !Physics2D.OverlapCircle(gameObject.transform.position + new Vector3(-1f, 0f, 0f), .05f, whatStops))
@@ -38,12 +44,16 @@ public class AiMovement : MonoBehaviour
                     if (gameObject.transform.position.x < player.transform.position.x)
                     {
                         gameObject.transform.position += new Vector3(1f, 0f, 0f);
-                        playerTwoAnimator.SetTrigger("Right");
+                        playerTwoAnimator.SetBool("Moving", true);
+                        playerTwoAnimator.SetFloat("arrowsH", 1);
+                        playerTwoAnimator.SetFloat("arrMagH", 1);
                     }
                     if (gameObject.transform.position.x > player.transform.position.x)
                     {
                         gameObject.transform.position += new Vector3(-1f, 0f, 0f);
-                        playerTwoAnimator.SetTrigger("Left");
+                        playerTwoAnimator.SetBool("Moving", true);
+                        playerTwoAnimator.SetFloat("arrowsH", -1);
+                        playerTwoAnimator.SetFloat("arrMagH", 1);
                     }
                 }
                 countdown = 2f;
