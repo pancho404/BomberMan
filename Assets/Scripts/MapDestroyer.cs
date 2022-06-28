@@ -15,8 +15,13 @@ public class MapDestroyer : MonoBehaviour
     Vector3Int right = new Vector3Int(1, 0, 0); 
     Vector3Int up = new Vector3Int(0, 1, 0); 
     Vector3Int left = new Vector3Int(-1, 0, 0); 
-    Vector3Int down = new Vector3Int(0, -1, 0); 
-    
+    Vector3Int down = new Vector3Int(0, -1, 0);
+
+    public void Start()
+    {
+        Debug.Log(tilemap.size);
+    }
+
     public void Explode(Vector2 worldPos)
     {
         Vector3Int originCell = tilemap.WorldToCell(worldPos);
@@ -44,7 +49,6 @@ public class MapDestroyer : MonoBehaviour
         {
             return;
         }
-
         if (gameplayTile == destroyableTile)
         {
             gameplayTilemap.SetTile(cell, null);            

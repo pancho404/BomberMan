@@ -91,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         Destroy(gameObject);
@@ -104,4 +103,5 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<LoadScene>().LoadOneWins();
         }
     }
+
 }

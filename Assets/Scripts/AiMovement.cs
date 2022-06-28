@@ -7,7 +7,7 @@ public class AiMovement : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] LayerMask whatStops;
     [SerializeField] Animator playerTwoAnimator;
-    private float countdown = 2f;
+    private float countdown = 0.5f;
 
 
     // Update is called once per frame
@@ -56,7 +56,7 @@ public class AiMovement : MonoBehaviour
                         playerTwoAnimator.SetFloat("arrMagH", 1);
                     }
                 }
-                countdown = 2f;
+                countdown = 0.5f;
             }
         }
     }
@@ -71,7 +71,7 @@ public class AiMovement : MonoBehaviour
         if (collision.tag == "PlayerOne")
         {
             Destroy(player);
-            FindObjectOfType<LoadScene>().LoadTwoWins();
+            FindObjectOfType<LoadScene>().LoadAIWins();
         }
     }
 }

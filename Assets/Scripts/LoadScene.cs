@@ -18,7 +18,7 @@ public class LoadScene : MonoBehaviour
 
     public void LoadAiGameplay()
     {
-        SceneManager.LoadScene("MainGameplayAI");
+        SceneManager.LoadScene("MainGameplay AI");
     }
     public void LoadOptions()
     {
@@ -50,5 +50,10 @@ public class LoadScene : MonoBehaviour
     public void LoadTwoWins()
     {
         SceneManager.LoadScene("TwoWins");
+    }
+
+    public void LoadAIWins()
+    {
+        SceneManager.LoadScene("AIWins");
     }
 }
