@@ -124,3 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdown: 2
   explosion: {fileID: 2741493029466320945, guid: e9ce1f960ec509b42987e85c800475a3, type: 3}
+  explosionParticles: {fileID: 7281479814514473659, guid: 9fdcdd305a5f8f04990398999f05cc35, type: 3}
